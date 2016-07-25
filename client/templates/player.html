@@ -1,0 +1,37 @@
+<template name="player">
+	{{#if imageURL}}<img src="{{imageURL}}" class="player">{{/if}}
+	<h1>{{question}}</h1>
+	{{#if fillInTheBlank}}
+	<form id="question-answer">
+        <input type="text" name="myAnswer" placeholder="" />
+	</form>
+	{{else}}
+	<ul class="answerChoices">
+		{{#if randoNum}}
+			{{#if randoNum2}}
+					<li><div class="right button">{{rightAnswer}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer1}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer2}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer3}}</div></li>
+			{{else}}
+					<li><div class="wrong button">{{wrongAnswer1}}</div></li>
+					<li><div class="right button">{{rightAnswer}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer2}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer3}}</div></li>
+			{{/if}}
+		{{else}}
+			{{#if randoNum2}}
+					<li><div class="wrong button">{{wrongAnswer2}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer1}}</div></li>
+					<li><div class="right button">{{rightAnswer}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer3}}</div></li>
+			{{else}}
+					<li><div class="wrong button">{{wrongAnswer3}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer1}}</div></li>
+					<li><div class="wrong button">{{wrongAnswer2}}</div></li>
+					<li><div class="right button">{{rightAnswer}}</div></li>
+			{{/if}}
+		{{/if}}
+	</ul>
+	{{/if}}
+</template>

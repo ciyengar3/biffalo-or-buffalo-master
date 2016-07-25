@@ -1,0 +1,145 @@
+/* CSS declarations go here */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/images/landscape.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #002020;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+img.logo {
+  height: 120px;
+}
+
+.answerChoices li div{
+    background-color: rgba(255,255,255,.25);
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .5s;
+    opacity: .5;
+}
+
+div.button {
+  background-color: rgba(255,255,255,.25);
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  color: #FFF;
+  cursor: pointer;
+  transition: all .5s;
+  opacity: 1 !important;
+}
+
+.selectedChoice {
+    opacity: 1 !important;
+    width: 225px !important;
+}
+
+div.button:hover {
+    background-color: rgba(255,255,255,.3);
+    width: 225px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    padding: 12em 0;
+}
+
+.box {
+    width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+span.id {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#join-game input, #question-answer input {
+    padding: 10px;
+    font-size: 40px;
+    width: 225px;
+    border: 0;
+    background-color: rgba(255,255,255,.25);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#question-answer input {
+    width: 90%;
+    font-size: 30px;
+}
+
+ul.players {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    margin: 20px auto;
+}
+
+ul.players li:nth-child(odd) {
+    background-color: rgba(255,255,255,.25);
+    padding: 10px;
+}
+
+ul.players li:nth-child(even) {
+    background-color: rgba(255,255,255,.15);
+    padding: 10px;
+}
+
+ul.answerChoices {
+	list-style: none;
+	padding: 0;
+}
+
+img.profilePic {
+    height: 100px;
+    border-radius: 50%;
+}
+
+img.question {
+  height: 350px;
+  margin-top: -50px;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+img.player {
+  max-height: 200px;
+  max-width: 90%;
+  margin-top: -50px;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+.list.profilePic {
+    height: 50px;
+}
+
+span.players {
+    display: inline-block;
+    height: 50px;
+    vertical-align: top;
+    line-height: 50px;
+    margin-left: 20px;
+}
